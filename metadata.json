@@ -1,0 +1,6 @@
+{
+  "name": "Elsa & Anna — Carta de Arendelle",
+  "description": "Uma experiência mágica e acolhedora de conversa infantil com Elsa e Anna de Frozen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

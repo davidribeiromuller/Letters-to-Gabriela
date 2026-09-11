@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="40%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </radialGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="iceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Outer border shimmer -->
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#38bdf8" stroke-width="4" stroke-opacity="0.4"/>
+
+  <!-- Radial Glow Behind Crystal -->
+  <circle cx="256" cy="256" r="200" fill="url(#glowGrad)"/>
+
+  <!-- Central Snowflake / Crystal (Elsa Magic) -->
+  <g filter="url(#glow)" stroke="url(#iceGrad)" stroke-width="6" stroke-linecap="round">
+    <!-- 6 main branches -->
+    <g transform="translate(256, 256)">
+      <!-- Branch 1 (0 deg) -->
+      <g>
+        <line x1="0" y1="0" x2="0" y2="-150" />
+        <line x1="0" y1="-50" x2="-26" y2="-76" />
+        <line x1="0" y1="-50" x2="26" y2="-76" />
+        <line x1="0" y1="-95" x2="-35" y2="-130" />
+        <line x1="0" y1="-95" x2="35" y2="-130" />
+        <circle cx="0" cy="-155" r="5" fill="#ffffff" />
+      </g>
+      <!-- Branch 2 (60 deg) -->
+      <g transform="rotate(60)">
+        <line x1="0" y1="0" x2="0" y2="-150" />
+        <line x1="0" y1="-50" x2="-26" y2="-76" />
+        <line x1="0" y1="-50" x2="26" y2="-76" />
+        <line x1="0" y1="-95" x2="-35" y2="-130" />
+        <line x1="0" y1="-95" x2="35" y2="-130" />
+        <circle cx="0" cy="-155" r="5" fill="#ffffff" />
+      </g>
+      <!-- Branch 3 (120 deg) -->
+      <g transform="rotate(120)">
+        <line x1="0" y1="0" x2="0" y2="-150" />
+        <line x1="0" y1="-50" x2="-26" y2="-76" />
+        <line x1="0" y1="-50" x2="26" y2="-76" />
+        <line x1="0" y1="-95" x2="-35" y2="-130" />
+        <line x1="0" y1="-95" x2="35" y2="-130" />
+        <circle cx="0" cy="-155" r="5" fill="#ffffff" />
+      </g>
+      <!-- Branch 4 (180 deg) -->
+      <g transform="rotate(180)">
+        <line x1="0" y1="0" x2="0" y2="-150" />
+        <line x1="0" y1="-50" x2="-26" y2="-76" />
+        <line x1="0" y1="-50" x2="26" y2="-76" />
+        <line x1="0" y1="-95" x2="-35" y2="-130" />
+        <line x1="0" y1="-95" x2="35" y2="-130" />
+        <circle cx="0" cy="-155" r="5" fill="#ffffff" />
+      </g>
+      <!-- Branch 5 (240 deg) -->
+      <g transform="rotate(240)">
+        <line x1="0" y1="0" x2="0" y2="-150" />
+        <line x1="0" y1="-50" x2="-26" y2="-76" />
+        <line x1="0" y1="-50" x2="26" y2="-76" />
+        <line x1="0" y1="-95" x2="-35" y2="-130" />
+        <line x1="0" y1="-95" x2="35" y2="-130" />
+        <circle cx="0" cy="-155" r="5" fill="#ffffff" />
+      </g>
+      <!-- Branch 6 (300 deg) -->
+      <g transform="rotate(300)">
+        <line x1="0" y1="0" x2="0" y2="-150" />
+        <line x1="0" y1="-50" x2="-26" y2="-76" />
+        <line x1="0" y1="-50" x2="26" y2="-76" />
+        <line x1="0" y1="-95" x2="-35" y2="-130" />
+        <line x1="0" y1="-95" x2="35" y2="-130" />
+        <circle cx="0" cy="-155" r="5" fill="#ffffff" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Central Jewel (Heart & Ice Crystal union) -->
+  <circle cx="256" cy="256" r="24" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="16" fill="#38bdf8"/>
+  <circle cx="256" cy="256" r="8" fill="#ffffff"/>
+
+  <!-- Warm Nordic / Anna Accent Hearts on 4 diagonals -->
+  <g fill="url(#roseGrad)" opacity="0.9">
+    <path d="M 170 170 C 160 160 144 165 144 180 C 144 195 170 210 170 210 C 170 210 196 195 196 180 C 196 165 180 160 170 170 Z" transform="scale(0.65) translate(80, 80)" />
+    <path d="M 170 170 C 160 160 144 165 144 180 C 144 195 170 210 170 210 C 170 210 196 195 196 180 C 196 165 180 160 170 170 Z" transform="scale(0.65) translate(460, 80)" />
+    <path d="M 170 170 C 160 160 144 165 144 180 C 144 195 170 210 170 210 C 170 210 196 195 196 180 C 196 165 180 160 170 170 Z" transform="scale(0.65) translate(80, 460)" />
+    <path d="M 170 170 C 160 160 144 165 144 180 C 144 195 170 210 170 210 C 170 210 196 195 196 180 C 196 165 180 160 170 170 Z" transform="scale(0.65) translate(460, 460)" />
+  </g>
+
+  <!-- Sparkles -->
+  <circle cx="120" cy="140" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="390" cy="130" r="5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="130" cy="380" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="380" cy="370" r="6" fill="#ffffff" opacity="0.9"/>
+</svg>
