@@ -88,7 +88,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({
           </motion.div>
         </div>
 
-        {/* The Requested Message: "Com amor, David" */}
+        {/* The Requested Message: "Com amor, David" & "Letters to Gabriela" */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -98,7 +98,10 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif italic font-medium tracking-wide bg-gradient-to-r from-cyan-100 via-pink-100 to-sky-200 bg-clip-text text-transparent drop-shadow-[0_2px_15px_rgba(165,243,252,0.4)]">
             Com amor, David
           </h1>
-          <p className="text-xs sm:text-sm text-cyan-200/70 font-sans tracking-wider uppercase flex items-center justify-center gap-1.5 pt-1">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-serif tracking-wide text-pink-200/90 font-light drop-shadow-[0_1px_10px_rgba(244,114,182,0.35)]">
+            Letters to Gabriela
+          </h2>
+          <p className="text-xs sm:text-sm text-cyan-200/70 font-sans tracking-wider uppercase flex items-center justify-center gap-1.5 pt-2">
             <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
             Preparando a magia de Arendelle...
           </p>
